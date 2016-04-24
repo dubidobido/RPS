@@ -58,7 +58,7 @@ function playToFive() {
     var computerMove = getComputerMove();
     var winner = getWinner(playerMove,computerMove);
     if (winner === "tie"){
-     console.log ("You have tied");
+     console.log ("You have tied.");
    }
     else if(winner === "player"){
      console.log ("You win this round.");
@@ -67,9 +67,9 @@ function playToFive() {
     else if(winner === "computer"){
      console.log ("Computer wins this round.");
      computerWins += 1;
-  } 
-     console.log ("Current player score is "+ playerWins +"  and Computer score is "+ computerWins + ".");
-   }  
+   } 
+  console.log ("Current player score is "+ playerWins +"  and Computer score is "+ computerWins + ".");
+  }  
     if (playerWins === 5){
      console.log ("You are the first to 5 wins! You are awesome!");
     }
@@ -78,5 +78,5 @@ function playToFive() {
     }
  return [playerWins, computerWins];
 }
-
+playToFive();
 
